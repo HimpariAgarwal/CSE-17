@@ -1,0 +1,29 @@
+body{
+background:#eef2f7;
+}
+
+header{
+background:linear-gradient(to right,#007bff,#6610f2);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.navbar{
+background:#212529;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+footer{
+background:#212529;
+color:#ccc;
+text-align:center;
+padding:13px;
+}
