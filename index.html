@@ -1,67 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Experiment-01</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Peaks</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-<h1>Responsive Page</h1>
-<p>Using Bootstrap Grid</p>
-</header>
+    <nav>
+        <h2>Adventure Peaks</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-<div class="container-fluid">
+    <section class="hero" id="home">
+        <h1>Explore The Untouched Mountains</h1>
+        <p>Discover breathtaking landscapes and thrilling adventures.</p>
+        <button onclick="showMessage()">Start Journey</button>
+    </section>
 
-<a class="navbar-brand" href="#">MySite</a>
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
+        <div class="cards">
+            <div class="card" onclick="showPlace('Himalayas')">
+                <h3>Himalayas</h3>
+                <p>Snow-covered peaks and amazing trekking routes.</p>
+            </div>
 
-<div class="collapse navbar-collapse justify-content-end" id="navMenu">
-<ul class="navbar-nav">
-<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-</ul>
-</div>
+            <div class="card" onclick="showPlace('Spiti Valley')">
+                <h3>Spiti Valley</h3>
+                <p>A paradise for adventure lovers.</p>
+            </div>
 
-</div>
-</nav>
+            <div class="card" onclick="showPlace('Manali')">
+                <h3>Manali</h3>
+                <p>Beautiful mountains and exciting activities.</p>
+            </div>
 
-<div class="container mt-5">
-<div class="row g-4">
+            <div class="card" onclick="showPlace('Valley of Flowers')">
+                <h3>Valley of Flowers</h3>
+                <p>Colorful landscapes and scenic beauty.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="col-lg-6 col-12">
-<div class="box">
-<h5>Section One</h5>
-<p>This section adjusts automatically. It takes full width on small screens and half width on large screens.</p>
-</div>
-</div>
+    <section id="activities">
+        <h2>Adventure Activities</h2>
 
-<div class="col-lg-6 col-12">
-<div class="box">
-<h5>Section Two</h5>
-<p>Bootstrap grid system makes layout responsive using rows and columns.</p>
-</div>
-</div>
+        <div class="cards">
+            <div class="card" onclick="showPlace('Trekking')">🥾 Trekking</div>
+            <div class="card" onclick="showPlace('Camping')">🏕 Camping</div>
+            <div class="card" onclick="showPlace('Rock Climbing')">🧗 Rock Climbing</div>
+            <div class="card" onclick="showPlace('River Rafting')">🚣 River Rafting</div>
+        </div>
+    </section>
 
-</div>
-</div>
+    <div id="info-box">
+        Click any destination or activity to know more.
+    </div>
 
-<footer>
-<p>© 2026 Responsive Design Experiment</p>
-</footer>
+    <section id="contact">
+        <h2>Contact Us</h2>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Adventure Peaks | Explore Nature</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
